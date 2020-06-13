@@ -1,0 +1,30 @@
+{
+  "name": "mehrdad-dadkhah/article-scrapping-php-wrapper",
+  "description": "Simple php wrapper on Newspaper3k Article scraping & curation",
+  "keywords": [
+    "scrapp",
+    "Newspaper3k",
+    "language",
+    "persian",
+    "natural-processing"
+  ],
+  "homepage": "https://github.com/Mehrdad-Dadkhah/article-scrapping-php-wrapper",
+  "type": "library",
+  "require": {
+    "php": ">=7.0",
+    "symfony/process": "^5.0"
+  },
+  "require-dev": {},
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Mehrdad Dadkhah",
+      "email": "dadkhah.ir@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MehrdadDadkhah\\Scrapp\\": "src/"
+    }
+  }
+}
