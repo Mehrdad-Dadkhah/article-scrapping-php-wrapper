@@ -12,10 +12,10 @@
   "type": "library",
   "require": {
     "php": ">=7.0",
-    "symfony/process": "^5.0"
+    "symfony/process": "^3.0"
   },
   "require-dev": {},
-  "license": "GPLv3",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Mehrdad Dadkhah",
