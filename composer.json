@@ -4,6 +4,8 @@
   "keywords": [
     "scrapp",
     "Newspaper3k",
+    "article",
+    "news",
     "language",
     "persian",
     "natural-processing"
@@ -15,7 +17,7 @@
     "symfony/process": "^3.0"
   },
   "require-dev": {},
-  "license": "GPLv3",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Mehrdad Dadkhah",
