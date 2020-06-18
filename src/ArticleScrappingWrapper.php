@@ -11,7 +11,7 @@ class ArticleScrappingWrapper
 {
     public function scrapp(string $url)
     {
-        $command = 'python ' . dirname(__FILE__) . '/ArticleScrapping.py ' . escapeshellarg(json_encode($url));
+        $command = 'python3 ' . dirname(__FILE__) . '/ArticleScrapping.py ' . "'" . $url . "'";
 
         $process = new Process($command);
         $process->run();

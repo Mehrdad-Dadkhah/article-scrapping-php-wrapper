@@ -138,9 +138,19 @@ composer require mehrdad-dadkhah/article-scrapping-php-wrapper
 ## Usage
 
 ```PHP
-use MehrdadDadkhah\Scrapp\ArticleScrappingPhpWrapper;
+use MehrdadDadkhah\Scrapp\ArticleScrappingWrapper;
 
-$parser = new ArticleScrappingPhpWrapper();
+$parser = new ArticleScrappingWrapper();
 
 $parser->scrapp('your url');
 ```
+
+## Read more
+
+(Newspaper)[https://github.com/codelucas/newspaper]
+
+(nltk)[http://www.nltk.org/install.html]
+
+(Scrape & Summarize News Articles Using Python)[https://medium.com/@randerson112358/scrape-summarize-news-articles-using-python-51a48af1b4e2]
+
+(Corpora Iranian Persian)[https://wortschatz.uni-leipzig.de/en/download/iranian-persian]
