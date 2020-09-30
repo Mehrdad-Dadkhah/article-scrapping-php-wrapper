@@ -135,6 +135,13 @@ NOTE: You will still most likely need to install the following libraries via you
 composer require mehrdad-dadkhah/article-scrapping-php-wrapper
 ```
 
+```
+python:
+
+import nltk
+nltk.download('all')
+```
+
 ## Usage
 
 ```PHP

@@ -13,7 +13,7 @@ class ArticleScrappingWrapper
     {
         $command = 'python3 ' . dirname(__FILE__) . '/ArticleScrapping.py ' . "'" . $url . "'";
 
-        $process = new Process($command);
+        $process = new Process($command, null, null, null, null);
         $process->run();
 
         if (!$process->isSuccessful()) {
