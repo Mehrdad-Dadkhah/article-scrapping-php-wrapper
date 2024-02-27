@@ -5,15 +5,25 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 /**
- * simple php and python wrapper on hazm persian text processor.
+ * PHP wrapper for python newspaper3k text processor.
  */
 class ArticleScrappingWrapper
 {
+    /**
+     * Accepts url string and returns Article object as an associative array.
+     * 
+     * @param string $url
+     * 
+     * @return array|object
+     */
     public function scrapp(string $url)
     {
-        $command = 'python3 ' . dirname(__FILE__) . '/ArticleScrapping.py ' . "'" . $url . "'";
+        $command = 'python3';
+        $executable = dirname(__FILE__) . '/ArticleScrapping.py';
 
-        $process = new Process($command, null, null, null, null);
+        $commands = [$command, $executable, $url];
+
+        $process = new Process($commands, null, null, null, null);
         $process->run();
 
         if (!$process->isSuccessful()) {
